@@ -123,6 +123,7 @@
                 }
             }
 
+            price = -1
             for (let i = 0; i < award.length; i++){
                 award[i].forEach(element => {
                     if (String(my_number).slice(-dictionary.get(i)) === element){
@@ -133,6 +134,10 @@
                         alert(`You are Win: ${price} Price`)
                     }
                 });
+            }
+
+            if (price === -1){
+                alert(`You Lose`)
             }
 
         }
